@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп «Бородинский»</title>
+</head>
+<body class="page__body">
+  
+  <header class="main-header">
+
+    <div class="main-header__wrapper">
+        <a class="main-header__logo">
+          <img src="img/logo 2.svg" width="101" height="18" alt="Барбершоп «Бородинский».">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    
+          <div class="main-nav__wrapper">
+    
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="sourse/index.html">
+                  Главная
+                </a>
+              </li>
+    
+              <li class="site-list__item">
+                <a href="photo.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+    
+            </ul>
+
+
+
+
+    <main class="program-container">
+    <div class="main-header__wrapper">
+        <section class="program">
+            <div class="program__wrapper">
+                <h1 class="program__title main-title">Подбор программы</h1>
+                <p class="program__desc">Заполните анкету, и мы подберем
+                    программу питания для вашего кота</p>
+                    <form class="program" action="" method="post "></form>
+            </div>
+        </section>
+        
+</main>
+
+<fieldset class="form__field">
+    <legend class="visually-hidden">
+        Информации о питомце
+    </legend>
+    <ul class="form__list">
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">ИМЯ:*
+            </label>
+            <input class="form__input form-control input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+        </li>
+
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">Вес (кг):*
+
+            </label>
+            <input class="form__input form-control input" type="number" id="cat-weight" name="cat-name" placeholder="+7" required>
+        </li>
+
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">Возраст (лет):
+
+            </label>
+            <input class="form__input form-control input" type="number" id="cat-age" min="0" name="cat-age" placeholder="33" required>
+        </li>
+ 
+
+    </ul></fieldset>
+
+<fieldset class="form__field">
+    <legend class="visually-hidden">
+        Ваша цель
+    </legend>
+    <ul class="form__list">
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">
+            </label>
+            <input class="form__input visually-hidden" type="radio" name="program-goal" value="cat-weight-loss" checked="checked">
+            <span class="label__mark"></span>
+            <span class="label__span">Похудение</span>
+        </li>
+
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">
+            </label>
+            <input class="form__input visually-hidden" type="radio" name="program-goal" value="cat-weight-loss" >
+            <span class="label__mark"></span>
+            <span class="label__span">Набор массы</span>
+        </li>
+
+        <li class="form__item">
+            <label class="form__label label" for="cat-name">
+            </label>
+            <input class="form__input visually-hidden" type="radio" name="program-goal" value="cat-weight-loss" >
+            <span class="label__mark"></span>
+            <span class="label__span">Не знаю (Нужен ваш совет)</span>
+        </li>
+        </ul>
+        </fieldset>
+
+        <fieldset class="form__field">
+            <legend class="form__legend">
+                Контактные данные
+(владельца кота)
+            </legend>
+            <ul class="form__list">
+                <li class="form__item">
+                    <label class="form__label label" for="email">E-mail:*
+                    </label>
+            
+            
+                <input class="form__input form-control input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+                required type="login-username">
+                    <span class="label__mark"></span>
+                    <span class="label__span"></span>
+                </li>
+        
+                <li class="form__item">
+                    <label class="form__label label" for="tel">Телефон:*
+                        <abbr title="Обязательно к заполнению"></abbr>
+                    </label>
+
+                    
+                    <input class="form__input form-control input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" 
+                    required>
+                    
+                </li>
+        
+                
+                </ul>
+                </fieldset>
+                
+                <fieldset class="form__field">
+                    <legend class="form__legend">Комментарий</legend>
+                    <label class="form__label label visually-hidden" for="comment">Коммент для доп. инфо о коте</label>
+                    <textarea class="form__input form-control textarea" rows="4" id="comment" name="comment" placeholder="Расскажите обо всех повАдках кота" ></textarea>
+                </fieldset>
+
+                
+                <fieldset class="form__field">
+                <legend class="form__legend">Дополнительно</legend>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label class="form__label" for="">
+                            <input class="form__input visually-hidden" type="checkbox" name="extra" value="sweetener" checked="checked">
+                            <span class="label__mark"></span>
+                            <span class="label__span">сахарозаменитель</span>
+                        </label>
+
+                    </li>
+
+                    <li class="form__item">
+                        <label class="form__label" for="">
+                            <input class="form__input visually-hidden" type="checkbox" name="extra" value="sweetener" >
+                            <span class="label__mark"></span>
+                            <span class="label__span">питьевая вода</span>
+                        </label>
+
+                    </li>
+
+                    <li class="form__item">
+                        <label class="form__label" for="">
+                            <input class="form__input visually-hidden" type="checkbox" name="extra" value="sweetener" >
+                            <span class="label__mark"></span>
+                            <span class="label__span">молоко</span>
+                        </label>
+
+                    </li>
+
+                    <li class="form__item">
+                        <label class="form__label" for="">
+                            <input class="form__input visually-hidden" type="checkbox" name="extra" value="sweetener" >
+                            <span class="label__mark"></span>
+                            <span class="label__span">витамины</span>
+                        </label>
+
+                    </li>
+
+                </ul>
+            </legend>
+            </fieldset>
+            <button class="form__buttom button button" type="submit">отправить заявку</button>
+            <span class="form__required">* — Обязательные поля</span>
+
+
+            <section class="adress">
+                <span>приглашаемк сотрудничеству дилеров!</span>
+                
+                <span>ул. Большая 
+                  Конюшенная, д. 19/8
+                  Санкт-Петербург</span>
+                  
+              </section>
+
+              <img src="img/Rectangle.png" width="320" height="362" alt="Барбершоп «Бородинский».">
+
+              <div class="main-footer__social social">
+                <b class="social__title"></b>
+                <ul class="social__list">
+                  <li class="social__item ">
+                    <a class="social__link social__link--logo (2)" ><img src="img/logo (2).svg" width="128" height="24" alt="Кэт-энерджи."></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--vkontakte" ><img src="img/vkontakte.svg" width="28" height="22" alt="Кэт-энерджи."></a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link social__link--youtube" ><img src="img/youtube.svg" width="28" height="22" alt="Кэт-энерджи."></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link social__link--telegram" ><img src="img/telegram.svg" width="28" height="22" alt="Кэт-энерджи."></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link social__link--html-academy"><img src="img/HTML Academy.png" width="113" height="20" alt="Кэт-энерджи."></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a class="social__link social__link--telegram"><img src="img/logolast_html 1.png" width="27" height="34" alt="Кэт-энерджи."></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-footer__copyright copyright">
+              
+              </div>
+
+
+
+          </section>
+
+          
+
+        </header>
+  
+      </div>
+    </section>
+
+</main>
+</body>
+</html>
+
